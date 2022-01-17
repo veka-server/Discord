@@ -117,9 +117,9 @@ class Discord extends \Psr\Log\AbstractLogger implements MiddlewareInterface
                 }
             }
 
-            $msg = "```\r\n";
-            $msg .= $trace."\r\n";
-            $msg .= "```\r\n";
+            $msg = "```".PHP_EOL;
+            $msg .= $trace.PHP_EOL;
+            $msg .= "```".PHP_EOL;
         }
 
         $tz = 'Europe/Paris';
@@ -283,10 +283,10 @@ class Discord extends \Psr\Log\AbstractLogger implements MiddlewareInterface
 
             /** verifie s'il y a des données */
             if(!empty($context)){
-                $message = "$message\r\n";
-                $message .= "```\r\n";
-                $message .= print_r($context, true)."\r\n";
-                $message .= "```\r\n";
+                $message = "$message".PHP_EOL;
+                $message .= "```".PHP_EOL;
+                $message .= print_r($context, true).PHP_EOL;
+                $message .= "```".PHP_EOL;
             }
 
         }
