@@ -1,0 +1,20 @@
+{
+    "name": "veka-server/Discord",
+    "description": "Un middleware PSR-15 et Log PSR-3  pour Discord",
+    "license": "MIT",
+    "keywords": ["middleware","minimalist","PSR-15","discord", "log", "PSR-3"],
+    "authors": [
+        {
+            "name": "Vanhaezebrouck Nicolas",
+            "email": "contact@veka-server.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VekaServer\\Discord\\" : "src/"
+        }
+    },
+    "require": {
+        "psr/http-message": "^1.0"
+    }
+}
